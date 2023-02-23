@@ -1,1 +1,0 @@
-# jamesmanogutemberg.github.io
