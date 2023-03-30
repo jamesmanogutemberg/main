@@ -2,34 +2,94 @@
 <html>
 <head>
   
-<title>Timekiller Central</title>
+<title>Timekillers</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="icon" type="image/x-icon" href="/icon.ico">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+
+<style>
+  .linklist {
+    width:50%;
+    background: rgb(34,30,88);
+    background: linear-gradient(90deg, rgba(34,30,88,1) 0%, rgba(21,21,200,1) 31%, rgba(0,212,255,1) 100%);
+    border-style:solid;
+    border-color:white;
+    border-radius:20px;
+    text-align:left;
+    -webkit-box-shadow:0px 0px 105px 30px rgba(169,169,232,0.63);
+    -moz-box-shadow: 0px 0px 105px 30px rgba(169,169,232,0.63);
+    box-shadow: 0px 0px 105px 30px rgba(169,169,232,0.63);
+  }
+
+  .passlist {
+    width:50%;
+    background: rgb(167,38,187);
+    background: linear-gradient(90deg, rgba(167,38,187,1) 0%, rgba(253,29,29,1) 59%, rgba(252,176,69,1) 100%);
+    border-style:solid;
+    border-color:white;
+    border-radius:20px;
+    text-align:left;
+    -webkit-box-shadow:0px 0px 105px 30px rgba(189,126,199,0.63);
+    -moz-box-shadow: 0px 0px 105px 30px rgba(189,126,199,0.63);
+    box-shadow: 0px 0px 105px 30px rgba(189,126,199,0.63);
+  }
+
+  a {
+    padding:5px;
+    text-shadow: rgba(255,92,250,0.75) 0px 0px 34px;
+  }
+
+  .hrline {
+    width:75%;
+  }
+</style>
+
 </head>
-<body style="background-color:#343430; color:white;">
-  
-<br>
-<center><h1>Collection of various time killers</h1></center>
-<center><p>for when you're bored in class</p></center>
-<br>
-<hr>
-<br>
-  <ul>
-    <li><a href="https://jamesmanogutemberg.github.io/webretro" target="_blank">Webretro (emulator)</a> <a href="https://jamesmanogutemberg.github.io/webretrov2" target="_blank">Variation 2</a> <a href="https://github.com/BinBashBanana/webretro" target="_blank" style="color:blue;">CREDIT</a></li>
-<li><a href="https://github.com/jamesmanogutemberg/webretro/releases/download/main/webretro-standalone.html" target="_blank">DOWNLOAD webretro (unblockable)</a> <a href="https://github.com/BinBashBanana/webretro" target="_blank" style="color:blue;">CREDIT</a></li>
-    <li><a href="https://jamesmanogutemberg.github.io/toblerone" target="_blank">'Toblerone'</a> <a href="https://github.com/Fhooop/Unblocked-Hub" target="_blank" style="color:blue;">CREDIT</a></li>
-    <li><a href="https://jamesmanogutemberg.github.io/skittles" target="_blank">'skittles'</a> <a href="https://github.com/TomMalbran/games" target="_blank" style="color:blue;">CREDIT</a></li>
-    <li><a href="https://jamesmanogutemberg.github.io/heath" target="_blank">'Heath'</a> <a href="https://github.com/ashuray/JavascriptGames" target="_blank" style="color:blue;">CREDIT</a></li>
-    <li><a href="https://jamesmanogutemberg.gtihub.io/vanilla" target="_blank">'vanilla' - may not work</a> <a href="https://github.com/FogNetwork/Tsunami-Lite" target="_blank" style="color:blue;">CREDIT</a></li>
-    <li><a href="https://jamesmanogutemberg.gtihub.io/mnm" target="_blank">'M&M'</a> <a href="https://github.com/unbl0ck/project-hub" target="_blank" style="color:blue;">CREDIT</a></li>
-    <li><a href="https://jamesmanogutemberg.github.io/legumes" target="_blank">'legumes'</a> <a href="https://github.com/OddPvP/unblockedgames" style="color:blue;">CREDIT</a></li>
-    <li><a href="https://jamesmanogutemberg.github.io/UV-static" target="_blank">UV-Static (MAY NOT WORK)</a> <a href="https://github.com/titaniumnetwork-dev/Ultraviolet-Static-Archive" target="_blank" style="color:blue;">CREDIT</a></li>
-    <li><a href="https://jamesmanogutemberg.github.io/chili" target=_blank">'Chili'</a> <a href="https://github.com/CBGamesdev/chilibowlflash" target="_blank" style="color:blue;">CREDIT</a></li>
-      <li><a href="https://jamesmanogutemberg.github.io/various-games" target="_blank">Various Games</a> <a href="https://github.com/camwhaler/Games" target="_blank" style="color:blue;">CREDIT</a></li>  
-</ul>
+<body style="background-color:#000000; color:white;">
   
   <br>
-  <h3>Passwords to the other pages (from the list above)</h3>
+  <center><h1>Collection of various time killers</h1></center>
+  <center><p>for when you're bored in class</p></center>
+  <center><h3 style="color:black;">IF YOU CAN SEE THIS, REFRESH THE PAGE.</h3></center>
+  <center>
+  <div class="hrline"><hr></div>
+  </center>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <center>
+  <div class="linklist">
+
+  <ul>
+
+    <li><a href="https://jamesmanogutemberg.github.io/webretro" target="_blank">Webretro (emulator)</a> <a href="https://jamesmanogutemberg.github.io/webretrov2" target="_blank">Variation 2</a> <a href="https://github.com/BinBashBanana/webretro" target="_blank" style="color:red;">CREDIT</a></li>
+    <li><a href="https://github.com/jamesmanogutemberg/webretro/releases/download/main/webretro-standalone.html" target="_blank">DOWNLOAD webretro (unblockable)</a> <a href="https://github.com/BinBashBanana/webretro" target="_blank" style="color:red;">CREDIT</a></li>
+    <li><a href="https://jamesmanogutemberg.github.io/toblerone" target="_blank">'Toblerone'</a> <a href="https://github.com/Fhooop/Unblocked-Hub" target="_blank" style="color:red;">CREDIT</a></li>
+    <li><a href="https://jamesmanogutemberg.github.io/skittles" target="_blank">'skittles'</a> <a href="https://github.com/TomMalbran/games" target="_blank" style="color:red;">CREDIT</a></li>
+    <li><a href="https://jamesmanogutemberg.github.io/heath" target="_blank">'Heath'</a> <a href="https://github.com/ashuray/JavascriptGames" target="_blank" style="color:red;">CREDIT</a></li>
+    <li><a href="https://jamesmanogutemberg.gtihub.io/vanilla" target="_blank">'vanilla' - may not work</a> <a href="https://github.com/FogNetwork/Tsunami-Lite" target="_blank" style="color:red;">CREDIT</a></li>
+    <li><a href="https://jamesmanogutemberg.gtihub.io/mnm" target="_blank">'M&M'</a> <a href="https://github.com/unbl0ck/project-hub" target="_blank" style="color:red;">CREDIT</a></li>
+    <li><a href="https://jamesmanogutemberg.github.io/legumes" target="_blank">'legumes'</a> <a href="https://github.com/OddPvP/unblockedgames" style="color:red;">CREDIT</a></li>
+    <li><a href="https://jamesmanogutemberg.github.io/UV-static" target="_blank">UV-Static (MAY NOT WORK)</a> <a href="https://github.com/titaniumnetwork-dev/Ultraviolet-Static-Archive" target="_blank" style="color:red;">CREDIT</a></li>
+    <li><a href="https://jamesmanogutemberg.github.io/chili" target=_blank">'Chili'</a> <a href="https://github.com/CBGamesdev/chilibowlflash" target="_blank" style="color:red;">CREDIT</a></li>
+    <li><a href="https://jamesmanogutemberg.github.io/various-games" target="_blank">Various Games</a> <a href="https://github.com/camwhaler/Games" target="_blank" style="color:red;">CREDIT</a></li>  
+
+  </ul>
+
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <div class="hrline"><hr></div>
+  <br>
+  <br>
+  <br>
+
+  <div class="passlist">
+  <h3>Page Passwords</h3>
   <ul>
     <li>THIS PAGE: asldbfeoirfFWER@#$%35#$%gsdFG</li>
     <li>Webretro: si9#n@&Gx9g40JyVJ5B5QoO</li>
@@ -44,5 +104,7 @@
     <li>Chili: 5#ky99b62z&Y7hmlvBYS!R7</li>
     <li>Various Games: zw7Q3xsfq7XXa!$9C5RHk4m</li>
   </ul>
+  </div>
+  </center>
 </body>
 </html>
